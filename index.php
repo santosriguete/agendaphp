@@ -14,7 +14,7 @@
             <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth"> <!-- COLOCO O MENU DO SITE -->
                 <div class="container-fluid">
                     <h3>Contatos</h3>
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar Contatos</button> <!-- COLOCO BOTÃO DO SITE -->
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastro de Contatos</button> <!-- COLOCO BOTÃO DO SITE -->
                 </div>
             </nav>
         </header>
@@ -43,16 +43,17 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Cadastro de Contato</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Teste de Modal
+        <?php
+            include 'cadastro.php'
+        ?>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
     </div>
   </div>
 </div>
